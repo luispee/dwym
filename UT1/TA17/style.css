@@ -1,0 +1,25 @@
+.tarjeta {
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    position: relative;
+}
+.avatar {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top: -25px;
+    left: -25px;
+    float: left;
+    border-radius: 50%;
+}
+.tarjeta *:not(avatar){
+    text-align: center;
+}
+.tarjeta button {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
