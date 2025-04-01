@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TA14</title>
+        
+        <script>
+            function añadirElemento() {
+                const input = document.getElementById("userInput");
+                // Crear un nuevo elemento de lista
+                const nuevoElemento = document.createElement("li");
+                // Asignar un texto al nuevo elemento
+                nuevoElemento.textContent = input.value;
+                // Añadir el nuevo elemento a la lista
+                document.querySelector("ul").appendChild(nuevoElemento);
+                // Limpiar el campo de entrada
+                input.value = "";
+            }
+        </script>
+    </head>
+    <body>
+        <p>Texto original</p>
+        
+        <input type="text" id="userInput" placeholder="Nuevo Elemento" />
+        <button onclick="añadirElemento()">Añadir Elemento</button>
+        <ul>
+
+        </ul>
+    </body>
+</html>
