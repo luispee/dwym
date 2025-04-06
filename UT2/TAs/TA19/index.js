@@ -30,9 +30,8 @@ let submitButton = document.createElement('button');
 submitButton.setAttribute('type', 'submit');
 submitButton.innerText = 'Enviar';
 submitButton.onsubmit = function(event) {
-    event.preventDefault(); // Evita el envío del formulario
-    
-    console.log("Form sent. " + nameInput.value + " " + passwordInput.value + " " + emailInput.value);
+
+    alert("Form sent. " + nameInput.value + " " + passwordInput.value + " " + emailInput.value);
 }
 
 form.appendChild(nameInput);
